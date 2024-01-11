@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <title>Portfolio Budowlane</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container-fluid full-height section-main">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 id="animated-text" class="responsive-font-h2 hidden animated-text">Zdzisław Krawczyk</h2>
+                <p class="responsive-font-p description">Usługi z zakresu <x class="animate-charcter">remontu</x> i <x  class="animate-charcter">wykończenia wnętrz</x></p>
+                <!-- Elementy, które będą reagować na ruch myszy -->
+                <div class="desktop-only">
+                    <div class="interactive-element" id="element1" style="left: -5%; top: 10%; width: 5%; height: 5%;"><span style="font-size: 50px;">📐</span></div>
+                    <div class="interactive-element" id="element2" style="right: -15%; bottom: 15%; width: 20%; height: 20%;"><span style="font-size: 40px;">📏</span></div>
+                    <div class="interactive-element" id="element3" style="right: 10%; bottom: 200%; width: 20%; height: 20%;"><span style="font-size: 50px;">⚙️</span></div>
+                    <div class="interactive-element" id="element4" style="right: 10%; top: 160%; width: 7%; height: 7%;"><span style="font-size: 50px;">💡</span></div>
+                    <div class="interactive-element" id="element5" style="left: 12%; bottom: -100%; width: 7%; height: 7%;"><span style="font-size: 50px;">🛠️</span></div>
+                    <div class="interactive-element" id="element6" style="right: 18%; top: 210%; width: 7%; height: 7%;"><span style="font-size: 50px;">🔨</span></div>
+                    <div class="interactive-element" id="element7" style="left: -10%; top: -15%; width: 5%; height: 5%;"><span style="font-size: 50px;">🔧</span></div>
+                    <div class="interactive-element" id="element7" style="right: -15%; bottom: 120%; width: 20%; height: 20%;"><span style="font-size: 40px;">🔧</span></div>
+                    <div class="interactive-element" id="element8" style="left: 30%; bottom: 250%; width: 7%; height: 7%;"><span style="font-size: 40px;">🔩</span></div>
+                    <div class="interactive-element" id="element9" style="left: 60%; bottom: 160%; width: 7%; height: 7%;"><span style="font-size: 40px;">⚒️</span></div>
+                    <div class="interactive-element" id="element9" style="right: 30%; top: 200%; width: 7%; height: 7%;"><span style="font-size: 50px;">🔌</span></div>
+                    <div class="interactive-element" id="element9" style="left: -20%; bottom: -40%; width: 7%; height: 7%;"><span style="font-size: 50px;">✏️</span></div>
+                    <div class="interactive-element" id="element9" style="left: 0%; bottom: 180%; width: 7%; height: 7%;"><span style="font-size: 40px;">🪛</span></div>
+                    <div class="interactive-element" id="element9" style="left: 15%; bottom: 180%; width: 7%; height: 7%;"><span style="font-size: 50px;">🪚</span></div>
+                    <div class="interactive-element" id="element9" style="left: 35%; bottom: 180%; width: 7%; height: 7%;"><span style="font-size: 40px;">✂️</span></div>
+                    <div class="interactive-element" id="element9" style="left: 40%; bottom: -100%; width: 7%; height: 7%;"><span style="font-size: 50px;">🪛</span></div>
+                </div>
+                <!-- Dodaj więcej elementów tutaj -->
+
+            </div>
+            <div class="col-12 text-center mt-5">
+              <div class="d-flex justify-content-center">
+                <button class="button-64" role="button" onclick="scrollToProjects()"><span class="text">Projekty<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"/>
+                </svg></span></button>
+              </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="full-width-section" id="full-width-section">
+        <div class="parallax-bg"></div>
+        <div class="content" >
+            <h1>W branży od ponad <x class="animate-charcter1">20</x> lat</h1>
+            <h2>Zlecenia realizowane na terenie do 50 km od powiatu ropczycko-sędziszowskiego.</h2>
+            <div id="animated-text_step"></div>
+        </div>
+        <div class="contact-box">
+            <a href="tel:+48511704944" id="copyText"><i class="fa fa-phone" aria-hidden="true"></i>
+                511 704 944</a>
+        </div>
+    </div>
+    
+    
+    <div class="container-fluid full-height section-projects">
+        <div class="container mt-5">
+            <h2 class="proj_text2">Skontaktuj się po więcej informacji. <c><svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"/>
+              </svg></c> <i class="fa fa-phone" aria-hidden="true"></i> 511 704 944 <a href="#full-width-section"><span class="dot"></span></a>
+                <!-- Ikona Facebooka z linkiem do profilu -->
+  <a href="https://www.facebook.com/zdzislawkrawczyk.a.k" target="_blank" rel="noopener noreferrer">
+    <i class="fab fa-facebook-square facebook-icon"></i>
+  </a>
+            </h2>
+            <h1 class="proj_text">Ostatnie realizacje</h2>
+            <div class="row" id="projects">
+                <!-- Projekty zostaną tutaj dodane przez JavaScript -->            
+            </div>
+              
+        </div>
+        <div class="button-top">
+            <a href="#" class="scroll-to-top">
+                <span>&uarr;</span>
+              </a>
+        </div>
+
+
+        <!-- Modal -->
+        <div class="modal fade" id="projectModal" tabindex="-1" role="dialog" aria-labelledby="projectModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="projectModalLabel">Nazwa projektu</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Zamknij">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                    <div class="modal-body" id="projectModalBody">
+                        <!-- Galeria zdjęć zostanie tutaj dodana przez JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+      
+    <footer>&copy;by <a href="https://github.com/Smialekk"> <y class="animate-charcter2">Smialekk</y></a> Zdzisław Krawczyk tel: 511 704 944 </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script>
+        // var projects = [
+        //     {name: 'Projekt 1', images: ['img/pro1/1.jpg', 'img/pro1/2.jpg', 'img/pro1/3.jpg','img/pro1/4.jpg','img/pro1/5.jpg']},
+        //     {name: 'Projekt 2', images: ['img/pro2/1.jpg', 'img/pro2/2.jpg', 'img/pro2/3.jpg','img/pro2/4.jpg','img/pro2/5.jpg']},
+        // ];
+        var project_des = [
+            "Prace wykończeniowe mieszkania dwupoziomowego (stan surowy deweloperski) na osiedlu ul. Południowa w Ropczycach.",
+            "Prace wykończeniowe mieszkania dwupoziomowego (stan surowy deweloperski) na osiedlu ul. Południowa w Ropczycach.",
+            "dwie łazienki - na górnym poziomie wybudowanym od podstaw (od ścian działowych) w kolorze beżowym ; na dole - w chłodnej szarości."
+        ]
+        var projects = [];
+
+        // Dla przykładu, dodajmy 3 projekty
+        for (var i = 1; i <= 3; i++) {
+            var projectName = 'Projekt ' + i;
+            var projectImages = [];
+
+            // Dodajemy 5 obrazów dla każdego projektu
+            for (var j = 1; j <= 20; j++) {
+                var imagePath = 'img/pro' + i + '/' + j + '.jpg';
+                projectImages.push(imagePath);
+            }
+
+            // Dodajemy projekt do tablicy projektów
+            projects.push({ name: projectName, images: projectImages });
+        }
+
+
+
+        var projectsDiv = document.getElementById('projects');
+for (var i = 0; i < projects.length; i++) {
+    var project = projects[i];
+    var projectCard = document.createElement('div');
+    projectCard.className = 'card1 col-lg-4 col-md-6 mb-4';
+    projectCard.innerHTML = '<div class="card-inner"><div class="card-front"><img src="' + project.images[0] + '" alt="' + project.name + '" class="img-fluid"><div class="centered">' + project.name + '</div></div><div class="card-back"><p>' + project_des[i] + '</p></div></div>';
+    projectsDiv.appendChild(projectCard);
+}
+
+$('.card1').on('click', function() {
+    var projectIndex = $(this).index();
+    var project = projects[projectIndex];
+    var modal = $('#projectModal');
+    modal.find('.modal-title').text(project.name);
+    
+    var numberOfThumbnails;
+    if (projectIndex === 0) {
+        numberOfThumbnails = 12;
+    } else if (projectIndex === 1) {
+        numberOfThumbnails = 20;
+    } else if (projectIndex === 2) {
+        numberOfThumbnails = 13;
+    } else {
+        numberOfThumbnails = project.images.length;
+    }
+
+    var modalBody = '<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel"><div class="carousel-inner">';
+    for (var i = 0; i < project.images.length; i++) {
+        modalBody += '<div class="carousel-item';
+        if (i === 0) {
+            modalBody += ' active';
+        }
+        modalBody += '"><img src="' + project.images[i] + '" class="d-block w-100 img-fluid"></div>';
+    }
+    modalBody += '</div><a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="sr-only">Poprzedni</span></a><a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="sr-only">Następny</span></a></div>';
+    
+    modalBody += '<div class="row mt-4"><div class="col-12 text-center" id="thumbnails">';
+    for (var j = 0; j < numberOfThumbnails; j++) {
+        modalBody += '<img src="' + project.images[j] + '" class="img-thumbnail m-1 thumbnail-item" data-target="#carouselExampleIndicators" data-slide-to="' + j + '" style="width: 80px;">';
+    }
+    modalBody += '</div></div>';
+    
+    modal.find('.modal-body').html(modalBody);
+    
+    // Inicjalizacja karuzeli Bootstrapa
+    $('#carouselExampleIndicators').carousel();
+    
+    // Obsługa kliknięć na miniatury
+    $('.thumbnail-item').on('click', function() {
+        var slideIndex = $(this).data('slide-to');
+        $('#carouselExampleIndicators').carousel(slideIndex);
+    });
+    
+    modal.modal('show');
+});
+
+
+
+
+
+        // Pobranie elementów za pomocą ich identyfikatorów
+        var elements = document.getElementsByClassName('interactive-element');
+
+        // Funkcja ruchu elementów
+        function moveElement(element, centerX, centerY, radius) {
+            document.addEventListener('mousemove', function(event) {
+                // Pozycja kursora myszy
+                var mouseX = event.clientX;
+                var mouseY = event.clientY;
+
+                // Obliczenie różnicy położenia kursora od centrum elementu
+                var diffX = mouseX - centerX;
+                var diffY = mouseY - centerY;
+
+                // Przesunięcie elementu w przeciwnym kierunku do ruchu kursora
+                element.style.transform = 'translate(' + (-diffX / radius) + 'px, ' + (-diffY / radius) + 'px)';
+            });
+        }
+
+        // Ustawienie początkowego położenia elementów i ich ruchu
+        for (var i = 0; i < elements.length; i++) {
+            var element = elements[i];
+            var rect = element.getBoundingClientRect();
+            var centerX = rect.left + rect.width / 2;
+            var centerY = rect.top + rect.height / 2;
+            var radius = 10 + i; // Zwiększanie promienia dla kolejnych elementów
+            moveElement(element, centerX, centerY, radius);
+        }
+    </script>
+    <script>
+        function scrollToProjects() {
+            var projectsSection = document.getElementById('projects');
+            projectsSection.scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+
+  
+  <script>
+// Po załadowaniu strony dodaj klasy show do elementów
+document.addEventListener('DOMContentLoaded', function() {
+    const animatedText = document.querySelector('.animated-text');
+    const description = document.querySelector('.description');
+    const button = document.querySelector('.button-64');
+
+    animatedText.classList.add('show');
+    setTimeout(() => {
+        description.classList.add('show');
+        setTimeout(() => {
+            button.classList.add('show');
+        }, 200); // Dodaj opóźnienie dla pojawienia się przycisku
+    }, 700); // Dodaj opóźnienie dla pojawienia się opisu
+});
+
+  </script>
+
+  <script>
+    document.getElementById('copyText').addEventListener('click', function() {
+    const textToCopy = '511 704 944'; // Tutaj wpisz tekst do skopiowania
+    const textArea = document.createElement('textarea');
+    textArea.value = textToCopy;
+    document.body.appendChild(textArea);
+    textArea.select();
+    document.execCommand('copy');
+    document.body.removeChild(textArea);
+    alert('Skopiowano do schowka: ' + textToCopy);
+});
+
+  </script>
+
+  <script>
+document.addEventListener('DOMContentLoaded', function() {
+  var scrollToTopButton = document.querySelector('.scroll-to-top');
+
+  scrollToTopButton.addEventListener('click', function(e) {
+    e.preventDefault();
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+  var scrollToTopButton = document.querySelector('.dot');
+
+  scrollToTopButton.addEventListener('click', function(e) {
+    e.preventDefault();
+    var targetSection = document.getElementById('full-width-section');
+    targetSection.scrollIntoView({ behavior: 'smooth' });
+  });
+});
+
+  </script>
+
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    animateText('Zapraszamy do kontaktu poniżej :)', 'animated-text_step');
+  });
+
+  function animateText(text, elementId) {
+    const textElement = document.getElementById(elementId);
+    let index = 0;
+
+    function showNextCharacter() {
+      if (index < text.length) {
+        const char = document.createElement('span');
+        char.textContent = text[index];
+        char.style.animation = `fadeIn 0.5s ${index * 0.2}s both`;
+        textElement.appendChild(char);
+        index++;
+        setTimeout(showNextCharacter, 50); // Czas opóźnienia między literami (możesz dostosować)
+      } else {
+        setTimeout(resetText, 10000); // Czas opóźnienia przed ponownym pojawieniem się tekstu (10 sekund)
+      }
+    }
+
+    function resetText() {
+      // Usuń wszystkie litery i zresetuj indeks
+      textElement.innerHTML = '';
+      index = 0;
+      // Rozpocznij animację ponownie
+      showNextCharacter();
+    }
+
+    showNextCharacter();
+  }
+</script>
+
+
+</body>
+</html>
